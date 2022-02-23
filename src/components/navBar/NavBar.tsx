@@ -1,4 +1,5 @@
 import NavBarWrapper from "./NavBarWrapper";
+import { MdShoppingCart } from "react-icons/md";
 export default function NavBar() {
   return (
     <NavBarWrapper>
@@ -6,7 +7,10 @@ export default function NavBar() {
         <h2>From the oven</h2>
         <div className="nav-bar__right">
           <input placeholder="search"></input>
-          <h4>Basket</h4>
+          <div className="nav_basket">
+            <h4>Basket</h4>
+            <MdShoppingCart size={30} />
+          </div>
         </div>
       </div>
     </NavBarWrapper>

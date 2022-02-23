@@ -5,6 +5,7 @@ const AppWrapper = styled.div`
     text-align: center;
     height: 100vh;
     border: solid 3px red;
+    overflow-y: hidden;
     .img_div {
       display: flex;
       justify-content: space-between;

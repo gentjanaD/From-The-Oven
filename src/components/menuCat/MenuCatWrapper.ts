@@ -1,5 +1,4 @@
 import styled from "styled-components";
-const catStyles = "blue";
 const MenuCatWrapper = styled.div`
   .menuCat {
     display: flex;
@@ -15,6 +14,7 @@ const MenuCatWrapper = styled.div`
       align-items: center;
       display: flex;
       justify-content: center;
+      color: white;
 
       > h3 {
         align-self: center;

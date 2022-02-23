@@ -5,8 +5,6 @@ const NavBarWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     background-color: rgba(227, 187, 108, 100);
-    /* height: 7vh; */
-    /* width: 100vw; */
     padding: 5px;
     align-items: center;
     h2 {
@@ -21,6 +19,13 @@ const NavBarWrapper = styled.div`
       justify-content: space-between;
       height: 4vh;
       align-items: center;
+      margin-right: 30px;
+      .nav_basket {
+        display: flex;
+        width: 30%;
+        justify-content: space-between;
+        align-items: center;
+      }
     }
   }
 `;
