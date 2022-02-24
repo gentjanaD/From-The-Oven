@@ -41,11 +41,11 @@ const MenuCatWrapper = styled.div`
       }
     }
     .panels {
-      background-color: black;
+      background-color: rgba(113, 124, 152, 100);
       width: 40vw;
       height: 50vh;
-      img {
-        min-height: 50vh;
+      #ovenImg {
+        height: 50vh;
       }
     }
   }

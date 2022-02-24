@@ -5,4 +5,5 @@ export type Item = {
   featured: boolean;
   image: string;
   category: string;
+  price: number;
 };

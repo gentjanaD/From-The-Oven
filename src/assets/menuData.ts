@@ -5,8 +5,9 @@ export const menuData = [
     dietaries: ["vg"],
     category: "alcohol",
     featured: false,
+    price: 10,
     image:
-      "https://images.pexels.com/photos/8473211/pexels-photo-8473211.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://images.pexels.com/photos/8473211/pexels-photo-8473211.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=300",
   },
   {
     id: 35,
@@ -14,6 +15,7 @@ export const menuData = [
     dietaries: ["vg"],
     category: "alcohol",
     featured: false,
+    price: 16,
     image:
       "https://images.pexels.com/photos/128242/pexels-photo-128242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -23,6 +25,7 @@ export const menuData = [
     dietaries: ["ve"],
     category: "alcohol",
     featured: false,
+    price: 14,
     image:
       "https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -32,6 +35,7 @@ export const menuData = [
     dietaries: ["ve"],
     category: "soft",
     featured: false,
+    price: 3,
     image:
       "https://images.pexels.com/photos/4389667/pexels-photo-4389667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -41,6 +45,7 @@ export const menuData = [
     dietaries: ["df"],
     category: "main",
     featured: false,
+    price: 20,
     image:
       "https://images.pexels.com/photos/1352274/pexels-photo-1352274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -50,6 +55,7 @@ export const menuData = [
     dietaries: ["gf,df"],
     category: "main",
     featured: false,
+    price: 16,
     image:
       "https://images.pexels.com/photos/5916/food-salad-healthy-colorful.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -59,6 +65,7 @@ export const menuData = [
     dietaries: ["df"],
     category: "main",
     featured: true,
+    price: 26,
     image:
       "https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -68,6 +75,7 @@ export const menuData = [
     dietaries: ["df"],
     category: "starter",
     featured: false,
+    price: 6,
     image:
       "https://images.pexels.com/photos/2067621/pexels-photo-2067621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -77,6 +85,7 @@ export const menuData = [
     dietaries: [],
     category: "desert",
     featured: false,
+    price: 6,
     image:
       "https://images.pexels.com/photos/4421615/pexels-photo-4421615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -86,6 +95,7 @@ export const menuData = [
     dietaries: ["v", "ve", "gf", "df"],
     category: "desert",
     featured: true,
+    price: 5,
     image:
       "https://images.pexels.com/photos/697571/pexels-photo-697571.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
   },

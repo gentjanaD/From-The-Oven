@@ -84,9 +84,10 @@ export default function MenuCat() {
           </TabList>
           <div className="panels">
             <TabPanel>
-              <img src={ovenImg} alt="ovenImg" width="100%" />
+              <img id="ovenImg" src={ovenImg} alt="ovenImg" width="100%" />
             </TabPanel>
             <TabPanel className="soft panel">
+              <h3>soft drinks</h3>
               {softDrinks.map((item, index) => (
                 <div className="soft_content">
                   <SingleItem key={index} item={item} />
@@ -94,6 +95,7 @@ export default function MenuCat() {
               ))}
             </TabPanel>
             <TabPanel className="alcohol panel">
+              <h3>alcohol</h3>
               {alcohol.map((item, index) => (
                 <div className="soft_content">
                   <SingleItem key={index} item={item} />
@@ -101,6 +103,7 @@ export default function MenuCat() {
               ))}
             </TabPanel>
             <TabPanel className="starter panel">
+              <h3>starters</h3>
               {starters.map((item, index) => (
                 <div className="soft_content">
                   <SingleItem key={index} item={item} />
@@ -108,6 +111,7 @@ export default function MenuCat() {
               ))}
             </TabPanel>
             <TabPanel className="mains panel">
+              <h3>mains</h3>
               {mains.map((item, index) => (
                 <div className="soft_content">
                   <SingleItem key={index} item={item} />
@@ -115,6 +119,7 @@ export default function MenuCat() {
               ))}
             </TabPanel>
             <TabPanel className="deserts panel">
+              <h3>deserts</h3>
               {deserts.map((item, index) => (
                 <div className="soft_content">
                   <SingleItem key={index} item={item} />
