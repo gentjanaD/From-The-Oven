@@ -4,7 +4,7 @@ import { menuData } from "./assets/menuData";
 // import SingleItem from "./components/singleItem/SingleItem";
 import NavBar from "./components/navBar/NavBar";
 import ovenImg from "./assets/oven.jpeg";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import MenuCat from "./components/menuCat/MenuCat";
 function App() {
   return (
@@ -14,11 +14,11 @@ function App() {
         <div className="App">
           <NavBar />
           <div className="img_div">
-            <img src={ovenImg} alt="ovenImg" width="60%" />
+            <MenuCat />
+            {/* <img src={ovenImg} alt="ovenImg" width="60%" /> */}
             {/* {menuData.map((item, index) => (
               <MenuCat key={index} item={item} />
             ))} */}
-            <MenuCat />
           </div>
           {console.log(menuData)}
         </div>
