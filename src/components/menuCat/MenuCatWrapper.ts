@@ -5,7 +5,7 @@ const MenuCatWrapper = styled.div`
     flex-direction: column;
     border: solid 3px purple;
     min-width: 300px;
-    margin-right: 30px;
+    /* margin-right: 30px; */
     justify-content: space-around;
     .food {
       min-height: 80px;

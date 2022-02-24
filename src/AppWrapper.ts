@@ -8,9 +8,9 @@ const AppWrapper = styled.div`
     overflow-y: hidden;
     .img_div {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       height: 90%;
-      margin-left: 30px;
+      /* margin-left: 60px; */
       align-items: center;
     }
   }
