@@ -15,7 +15,7 @@ export default function MenuCat() {
                   console.log("soft-Modal");
                 }}
               >
-                Soft Drinks
+                Soft Drink
               </h3>
             </Tab>
             <Tab>
