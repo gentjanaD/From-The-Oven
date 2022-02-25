@@ -10,16 +10,16 @@ const ModalWrapper = styled.div`
   }
   .modal_content_wrapper {
     position: fixed;
-    width: 20vw;
+    width: 25vw;
     height: 100vh;
     background: white;
     margin: auto;
     top: 0;
     bottom: 0;
-    left: 80vw;
+    left: 75vw;
     right: 0;
-    /* padding: 0px; */
     opacity: 75%;
+    animation: slideIn 0.8s linear;
   }
   .modal_content {
     h3 {
@@ -36,6 +36,20 @@ const ModalWrapper = styled.div`
   }
   .price {
     border-top: solid 3px green;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(400px);
+      animation-timing-function: ease-out;
+    }
+    80% {
+      transform: translateX(10px);
+      animation-timing-function: ease-out;
+    }
+    100% {
+      transform: translateX(0px);
+      animation-timing-function: ease-in;
+    }
   }
 `;
 export default ModalWrapper;
