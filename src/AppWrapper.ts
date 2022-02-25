@@ -10,7 +10,6 @@ const AppWrapper = styled.div`
       display: flex;
       justify-content: space-around;
       height: 90%;
-      /* margin-left: 60px; */
       align-items: center;
     }
   }

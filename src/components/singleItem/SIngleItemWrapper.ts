@@ -1,11 +1,11 @@
 import styled from "styled-components";
 const SingleItemWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+  padding: 20px;
+  border: solid 3px red;
+
   .itemContent {
-    /* display: flex; */
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-between;
   }
   img {
     border-radius: 5%;

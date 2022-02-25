@@ -16,6 +16,7 @@ const MenuCatWrapper = styled.div`
         display: flex;
         justify-content: center;
         color: white;
+        border-radius: 5px;
 
         > h3 {
           align-self: center;
@@ -25,6 +26,7 @@ const MenuCatWrapper = styled.div`
       .soft {
         /* border: solid 3px yellow; */
         background-color: rgba(113, 124, 152, 100);
+
         /* padding: 10px; */
       }
       .alcohol {
@@ -43,9 +45,17 @@ const MenuCatWrapper = styled.div`
     .panels {
       background-color: rgba(113, 124, 152, 100);
       width: 40vw;
-      height: 50vh;
+      max-height: 50vh;
+      border-radius: 5px;
       #ovenImg {
         height: 50vh;
+        border-radius: 5px;
+      }
+      .panel {
+        h3 {
+          margin-bottom: 30px;
+          text-transform: capitalize;
+        }
       }
     }
   }

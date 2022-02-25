@@ -5,11 +5,9 @@ import { menuData } from "../../assets/menuData";
 import SingleItem from "../singleItem/SingleItem";
 import { Item } from "../../types/menuTypes";
 import ovenImg from "../../assets/oven.jpeg";
-
-interface MenuCatProps {
-  item: Item;
-}
+import Basket from "../basket/Basket";
 export default function MenuCat() {
+  const [basketList, setBasketList] = useState<Item[]>([]);
   const softDrinks: Item[] = [];
   const alcohol: Item[] = [];
   const starters: Item[] = [];
@@ -30,8 +28,11 @@ export default function MenuCat() {
         return deserts.push(item);
     }
   });
-  console.log("alc", alcohol);
-  // const [onClick, setOnclick] = useState(false);
+
+  const addToBasket = (item: Item) => {
+    setBasketList((prev) => [...prev, item]);
+  };
+  console.log(basketList);
   return (
     <MenuCatWrapper>
       <Tabs>
@@ -42,44 +43,16 @@ export default function MenuCat() {
               <h3 className="soft food">Soft Drinks</h3>
             </Tab>
             <Tab>
-              <h3
-                className="alcohol food"
-                onClick={() => {
-                  console.log("alcohol-Modal");
-                }}
-              >
-                Alcohol
-              </h3>
+              <h3 className="alcohol food">Alcohol</h3>
             </Tab>
             <Tab>
-              <h3
-                className="starters food"
-                onClick={() => {
-                  console.log("starters-Modal");
-                }}
-              >
-                Starters
-              </h3>
+              <h3 className="starters food">Starters</h3>
             </Tab>
             <Tab>
-              <h3
-                className="mains food"
-                onClick={() => {
-                  console.log("mains-Modal");
-                }}
-              >
-                Mains
-              </h3>
+              <h3 className="mains food">Mains</h3>
             </Tab>
             <Tab>
-              <h3
-                className="desert food"
-                onClick={() => {
-                  console.log("desert-Modal");
-                }}
-              >
-                Desert
-              </h3>
+              <h3 className="desert food">Desert</h3>
             </Tab>
           </TabList>
           <div className="panels">
@@ -90,7 +63,11 @@ export default function MenuCat() {
               <h3>soft drinks</h3>
               {softDrinks.map((item, index) => (
                 <div className="soft_content">
-                  <SingleItem key={index} item={item} />
+                  <SingleItem
+                    key={index}
+                    item={item}
+                    addToBasket={addToBasket}
+                  />
                 </div>
               ))}
             </TabPanel>
@@ -98,7 +75,11 @@ export default function MenuCat() {
               <h3>alcohol</h3>
               {alcohol.map((item, index) => (
                 <div className="soft_content">
-                  <SingleItem key={index} item={item} />
+                  <SingleItem
+                    key={index}
+                    item={item}
+                    addToBasket={addToBasket}
+                  />
                 </div>
               ))}
             </TabPanel>
@@ -106,7 +87,11 @@ export default function MenuCat() {
               <h3>starters</h3>
               {starters.map((item, index) => (
                 <div className="soft_content">
-                  <SingleItem key={index} item={item} />
+                  <SingleItem
+                    key={index}
+                    item={item}
+                    addToBasket={addToBasket}
+                  />
                 </div>
               ))}
             </TabPanel>
@@ -114,7 +99,11 @@ export default function MenuCat() {
               <h3>mains</h3>
               {mains.map((item, index) => (
                 <div className="soft_content">
-                  <SingleItem key={index} item={item} />
+                  <SingleItem
+                    key={index}
+                    item={item}
+                    addToBasket={addToBasket}
+                  />
                 </div>
               ))}
             </TabPanel>
@@ -122,10 +111,15 @@ export default function MenuCat() {
               <h3>deserts</h3>
               {deserts.map((item, index) => (
                 <div className="soft_content">
-                  <SingleItem key={index} item={item} />
+                  <SingleItem
+                    key={index}
+                    item={item}
+                    addToBasket={addToBasket}
+                  />
                 </div>
               ))}
             </TabPanel>
+            <Basket basketList={basketList} />
           </div>
         </div>
       </Tabs>
