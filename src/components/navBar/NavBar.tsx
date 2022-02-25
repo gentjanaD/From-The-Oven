@@ -3,10 +3,12 @@ import NavBarWrapper from "./NavBarWrapper";
 import { MdShoppingCart } from "react-icons/md";
 import { Item } from "../../types/menuTypes";
 import { Modal } from "../modal/Modal";
+import { count } from "console";
 interface NavBarProps {
   basketList: Item[];
+  counts: { name: string; quantity: number };
 }
-export default function NavBar({ basketList }: NavBarProps) {
+export default function NavBar({ basketList, counts }: NavBarProps) {
   const [onClick, setOnClick] = useState(false);
   const openModal = () => {
     setOnClick(true);
@@ -26,6 +28,7 @@ export default function NavBar({ basketList }: NavBarProps) {
                 basketList={basketList}
                 onClick={onClick}
                 closeModal={closeModal}
+                counts={counts}
               />
             )}
 

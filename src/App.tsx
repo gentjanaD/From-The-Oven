@@ -10,12 +10,20 @@ function App() {
   const addToBasket = (item: Item) => {
     setBasketList((prev) => [...prev, item]);
   };
+
+  const counts: any = {};
+  basketList.forEach((x: Item) => {
+    counts.name = x.name;
+    counts.quantity = (counts.quantity || 0) + 1;
+  });
+  console.log("counts", counts);
+
   return (
     <Fragment>
       <GlobalStyle />
       <AppWrapper>
         <div className="App">
-          <NavBar basketList={basketList} />
+          <NavBar basketList={basketList} counts={counts} />
           <div className="img_div">
             <MenuCat basketList={basketList} addToBasket={addToBasket} />
           </div>
