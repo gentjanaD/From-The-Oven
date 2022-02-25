@@ -24,10 +24,7 @@ const MenuCatWrapper = styled.div`
         }
       }
       .soft {
-        /* border: solid 3px yellow; */
         background-color: rgba(113, 124, 152, 100);
-
-        /* padding: 10px; */
       }
       .alcohol {
         background-color: rgba(113, 124, 152, 100);
@@ -45,8 +42,10 @@ const MenuCatWrapper = styled.div`
     .panels {
       background-color: rgba(113, 124, 152, 100);
       width: 40vw;
-      max-height: 50vh;
+      height: 50vh;
       border-radius: 5px;
+      border: solid 3px yellow;
+      overflow-y: scroll;
       #ovenImg {
         height: 50vh;
         border-radius: 5px;

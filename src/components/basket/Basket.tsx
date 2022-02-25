@@ -11,12 +11,6 @@ export default function Basket({ basketList }: BasketProps) {
 
   return (
     <BasketWrapper>
-      {basketList.map((item) => (
-        <div className="basket_content">
-          <h4>{item.name}</h4>
-          <h4>${item.price}</h4>
-        </div>
-      ))}
       <div className="basket_total">
         {basketList.length > 0 && <h4>{basketList.length} items in basket</h4>}
         {priceArr.length > 0 && (

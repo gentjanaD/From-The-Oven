@@ -6,8 +6,12 @@ import SingleItem from "../singleItem/SingleItem";
 import { Item } from "../../types/menuTypes";
 import ovenImg from "../../assets/oven.jpeg";
 import Basket from "../basket/Basket";
-export default function MenuCat() {
-  const [basketList, setBasketList] = useState<Item[]>([]);
+interface MenuCatProps {
+  basketList: Item[];
+  addToBasket: (item: Item) => void;
+}
+export default function MenuCat({ basketList, addToBasket }: MenuCatProps) {
+  // const [basketList, setBasketList] = useState<Item[]>([]);
   const softDrinks: Item[] = [];
   const alcohol: Item[] = [];
   const starters: Item[] = [];
@@ -29,9 +33,9 @@ export default function MenuCat() {
     }
   });
 
-  const addToBasket = (item: Item) => {
-    setBasketList((prev) => [...prev, item]);
-  };
+  // const addToBasket = (item: Item) => {
+  //   setBasketList((prev) => [...prev, item]);
+  // };
   console.log(basketList);
   return (
     <MenuCatWrapper>
@@ -72,16 +76,18 @@ export default function MenuCat() {
               ))}
             </TabPanel>
             <TabPanel className="alcohol panel">
-              <h3>alcohol</h3>
-              {alcohol.map((item, index) => (
-                <div className="soft_content">
-                  <SingleItem
-                    key={index}
-                    item={item}
-                    addToBasket={addToBasket}
-                  />
-                </div>
-              ))}
+              <div className="cat_item_content">
+                <h3>alcohol</h3>
+                {alcohol.map((item, index) => (
+                  <div className="soft_content">
+                    <SingleItem
+                      key={index}
+                      item={item}
+                      addToBasket={addToBasket}
+                    />
+                  </div>
+                ))}
+              </div>
             </TabPanel>
             <TabPanel className="starter panel">
               <h3>starters</h3>

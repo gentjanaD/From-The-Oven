@@ -20,11 +20,22 @@ const NavBarWrapper = styled.div`
       height: 4vh;
       align-items: center;
       margin-right: 30px;
+      input {
+        height: 30px;
+        width: 60%;
+        border-radius: 3px;
+      }
       .nav_basket {
         display: flex;
         width: 30%;
-        justify-content: space-between;
+        h4 {
+          margin-right: 7px;
+        }
         align-items: center;
+        .basket_icon {
+          display: flex;
+          flex-direction: column;
+        }
       }
     }
   }
