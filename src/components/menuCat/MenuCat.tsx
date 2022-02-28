@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import MenuCatWrapper from "./MenuCatWrapper";
 import { menuData } from "../../assets/menuData";
@@ -11,7 +11,6 @@ interface MenuCatProps {
   addToBasket: (item: Item) => void;
 }
 export default function MenuCat({ basketList, addToBasket }: MenuCatProps) {
-  // const [basketList, setBasketList] = useState<Item[]>([]);
   const softDrinks: Item[] = [];
   const alcohol: Item[] = [];
   const starters: Item[] = [];
@@ -32,11 +31,7 @@ export default function MenuCat({ basketList, addToBasket }: MenuCatProps) {
         return deserts.push(item);
     }
   });
-
-  // const addToBasket = (item: Item) => {
-  //   setBasketList((prev) => [...prev, item]);
-  // };
-  console.log(basketList);
+  console.log("basketlist", basketList);
   return (
     <MenuCatWrapper>
       <Tabs>

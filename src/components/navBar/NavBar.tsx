@@ -6,9 +6,9 @@ import { Modal } from "../modal/Modal";
 import { count } from "console";
 interface NavBarProps {
   basketList: Item[];
-  counts: { name: string; quantity: number };
+  counts?: { name: string; quantity: number };
 }
-export default function NavBar({ basketList, counts }: NavBarProps) {
+export default function NavBar({ basketList }: NavBarProps) {
   const [onClick, setOnClick] = useState(false);
   const openModal = () => {
     setOnClick(true);
@@ -16,6 +16,11 @@ export default function NavBar({ basketList, counts }: NavBarProps) {
   const closeModal = () => {
     setOnClick(false);
   };
+  let totalItems: number[] = [];
+  basketList.forEach((item) => {
+    totalItems.push(item.quantity);
+  });
+  console.log("ite", totalItems);
   return (
     <NavBarWrapper>
       <div className="nav-bar">
@@ -28,13 +33,12 @@ export default function NavBar({ basketList, counts }: NavBarProps) {
                 basketList={basketList}
                 onClick={onClick}
                 closeModal={closeModal}
-                counts={counts}
               />
             )}
 
             <div className="basket_icon">
               <p style={{ marginBottom: "-4px" }}>
-                {basketList.length > 0 && basketList.length}
+                {basketList.length > 0 && totalItems.reduce((a, b) => a + b, 0)}
               </p>
               <MdShoppingCart size={50} onClick={openModal} />
             </div>

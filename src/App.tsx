@@ -7,23 +7,19 @@ import { Fragment } from "react";
 import MenuCat from "./components/menuCat/MenuCat";
 function App() {
   const [basketList, setBasketList] = useState<Item[]>([]);
-  const addToBasket = (item: Item) => {
-    setBasketList((prev) => [...prev, item]);
-  };
 
-  const counts: any = {};
-  basketList.forEach((x: Item) => {
-    counts.name = x.name;
-    counts.quantity = (counts.quantity || 0) + 1;
-  });
-  console.log("counts", counts);
+  const addToBasket = (item: Item) => {
+    basketList.map((newItem) => newItem.name).includes(item.name) ||
+      setBasketList((prev) => [...prev, item]);
+    item.quantity++;
+  };
 
   return (
     <Fragment>
       <GlobalStyle />
       <AppWrapper>
         <div className="App">
-          <NavBar basketList={basketList} counts={counts} />
+          <NavBar basketList={basketList} />
           <div className="img_div">
             <MenuCat basketList={basketList} addToBasket={addToBasket} />
           </div>

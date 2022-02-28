@@ -6,6 +6,7 @@ export const menuData = [
     category: "alcohol",
     featured: false,
     price: 10,
+    quantity: 0,
     image:
       "https://images.pexels.com/photos/8473211/pexels-photo-8473211.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=300",
   },
@@ -16,6 +17,7 @@ export const menuData = [
     category: "alcohol",
     featured: false,
     price: 16,
+    quantity: 0,
     image:
       "https://images.pexels.com/photos/128242/pexels-photo-128242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -26,6 +28,7 @@ export const menuData = [
     category: "alcohol",
     featured: false,
     price: 14,
+    quantity: 0,
     image:
       "https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -36,6 +39,7 @@ export const menuData = [
     category: "soft",
     featured: false,
     price: 3,
+    quantity: 0,
     image:
       "https://images.pexels.com/photos/4389667/pexels-photo-4389667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -46,6 +50,7 @@ export const menuData = [
     category: "main",
     featured: false,
     price: 20,
+    quantity: 0,
     image:
       "https://images.pexels.com/photos/1352274/pexels-photo-1352274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -56,6 +61,7 @@ export const menuData = [
     category: "main",
     featured: false,
     price: 16,
+    quantity: 0,
     image:
       "https://images.pexels.com/photos/5916/food-salad-healthy-colorful.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -66,6 +72,7 @@ export const menuData = [
     category: "main",
     featured: true,
     price: 26,
+    quantity: 0,
     image:
       "https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -76,6 +83,7 @@ export const menuData = [
     category: "starter",
     featured: false,
     price: 6,
+    quantity: 0,
     image:
       "https://images.pexels.com/photos/2067621/pexels-photo-2067621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -86,6 +94,7 @@ export const menuData = [
     category: "desert",
     featured: false,
     price: 6,
+    quantity: 0,
     image:
       "https://images.pexels.com/photos/4421615/pexels-photo-4421615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -96,6 +105,7 @@ export const menuData = [
     category: "desert",
     featured: true,
     price: 5,
+    quantity: 0,
     image:
       "https://images.pexels.com/photos/697571/pexels-photo-697571.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
   },
