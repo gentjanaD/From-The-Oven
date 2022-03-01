@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/Menu-App/static/js/main.d4f94bba.js",
+    "main.js": "/Menu-App/static/js/main.371ac9a8.js",
     "static/media/oven.jpeg": "/Menu-App/static/media/oven.39561d8ebf3c842f79d6.jpeg",
     "index.html": "/Menu-App/index.html",
-    "main.d4f94bba.js.map": "/Menu-App/static/js/main.d4f94bba.js.map"
+    "main.371ac9a8.js.map": "/Menu-App/static/js/main.371ac9a8.js.map"
   },
   "entrypoints": [
-    "static/js/main.d4f94bba.js"
+    "static/js/main.371ac9a8.js"
   ]
 }
