@@ -4,7 +4,7 @@ const AppWrapper = styled.div`
   .App {
     text-align: center;
     height: 100vh;
-    border: solid 3px red;
+    /* border: solid 3px red; */
     overflow-y: hidden;
     .img_div {
       display: flex;

@@ -1,6 +1,6 @@
 // import { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import MenuCatWrapper from "./MenuCatWrapper";
 import { menuData } from "../../assets/menuData";
 import SingleItem from "../singleItem/SingleItem";
@@ -10,16 +10,39 @@ import Basket from "../basket/Basket";
 interface MenuCatProps {
   basketList: Item[];
   addToBasket: (item: Item) => void;
+  searchVal: string;
 }
-export default function MenuCat({ basketList, addToBasket }: MenuCatProps) {
-  const [tabIndex, setTabIndex] = useState(0);
+export default function MenuCat({
+  basketList,
+  addToBasket,
+  searchVal,
+}: MenuCatProps) {
   const softDrinks: Item[] = [];
   const alcohol: Item[] = [];
   const starters: Item[] = [];
   const mains: Item[] = [];
   const deserts: Item[] = [];
+  const [filteredItems, setFilteredItems] = useState<string[]>([]);
 
-  menuData.forEach((item: Item) => {
+  const itemNamesArr: string[] = Object.values(menuData).map(
+    (item: Item) => item.name
+  );
+
+  useEffect(() => {
+    setFilteredItems(
+      itemNamesArr.filter((title: string) => {
+        return title.toLowerCase().includes(searchVal.toLowerCase());
+      })
+    );
+  }, [searchVal]);
+
+  const searchResults: Item[] = [];
+  console.log("itemNameArr", itemNamesArr);
+  menuData.forEach(
+    (item: Item) =>
+      filteredItems.includes(item.name) && searchResults.push(item)
+  );
+  searchResults.forEach((item: Item) => {
     switch (item.category) {
       case "alcohol":
         return alcohol.push(item);
@@ -33,13 +56,9 @@ export default function MenuCat({ basketList, addToBasket }: MenuCatProps) {
         return deserts.push(item);
     }
   });
-  console.log("basketlist", basketList);
   return (
     <MenuCatWrapper>
-      <Tabs
-        selectedIndex={tabIndex}
-        onSelect={(index: number) => setTabIndex(index)}
-      >
+      <Tabs>
         <div className="menuCat">
           <TabList className="list">
             <Tab></Tab>

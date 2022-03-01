@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
+import { SearchBar } from "../searchbar/SearchBar";
 import NavBarWrapper from "./NavBarWrapper";
 import { MdShoppingCart } from "react-icons/md";
 import { Item } from "../../types/menuTypes";
 import { Modal } from "../modal/Modal";
 interface NavBarProps {
   basketList: Item[];
+  changeHandler: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
-export default function NavBar({ basketList }: NavBarProps) {
+export default function NavBar({ basketList, changeHandler }: NavBarProps) {
   const [onClick, setOnClick] = useState(false);
   const openModal = () => {
     setOnClick(true);
@@ -20,7 +22,7 @@ export default function NavBar({ basketList }: NavBarProps) {
       <div className="nav-bar">
         <h2>From the oven</h2>
         <div className="nav-bar__right">
-          <input placeholder="search"></input>
+          <SearchBar changeHandler={changeHandler} />
           <div className="nav_basket">
             {onClick && (
               <Modal
