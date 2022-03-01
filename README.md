@@ -28,6 +28,11 @@ Purpose of this repo is to test and work with different technilogies.
 ### Tech Stack
 
 - React
-- Context API for state management
 - Typescript
 - Figma
+
+### Next Steps
+
+- Refactor code using Context Api
+- Continue styling
+- Replace mock data with an api
