@@ -83,22 +83,24 @@ export default function MenuCat({
               <img id="ovenImg" src={ovenImg} alt="ovenImg" width="100%" />
             </TabPanel>
             <TabPanel className="soft panel" style={{ background: "#717C98" }}>
-              <h3>soft drinks</h3>
-              {softDrinks.map((item, index) => (
-                <div className="soft_content">
-                  <SingleItem
-                    key={index}
-                    item={item}
-                    addToBasket={addToBasket}
-                  />
-                </div>
-              ))}
+              <div style={{ minHeight: "450px" }}>
+                <h3>soft drinks</h3>
+                {softDrinks.map((item, index) => (
+                  <div className="soft_content">
+                    <SingleItem
+                      key={index}
+                      item={item}
+                      addToBasket={addToBasket}
+                    />
+                  </div>
+                ))}
+              </div>
             </TabPanel>
             <TabPanel
               className="alcohol panel"
               style={{ background: "#717C98" }}
             >
-              <div className="cat_item_content">
+              <div className="cat_item_content" style={{ minHeight: "450px" }}>
                 <h3>alcohol</h3>
                 {alcohol.map((item, index) => (
                   <div className="soft_content">
@@ -115,43 +117,49 @@ export default function MenuCat({
               className="starter panel"
               style={{ background: "#C17630" }}
             >
-              <h3>starters</h3>
-              {starters.map((item, index) => (
-                <div>
-                  <SingleItem
-                    key={index}
-                    item={item}
-                    addToBasket={addToBasket}
-                  />
-                </div>
-              ))}
+              <div style={{ minHeight: "450px" }}>
+                <h3>starters</h3>
+                {starters.map((item, index) => (
+                  <div>
+                    <SingleItem
+                      key={index}
+                      item={item}
+                      addToBasket={addToBasket}
+                    />
+                  </div>
+                ))}
+              </div>
             </TabPanel>
             <TabPanel className="mains panel" style={{ background: "#C17630" }}>
-              <h3>mains</h3>
-              {mains.map((item, index) => (
-                <div>
-                  <SingleItem
-                    key={index}
-                    item={item}
-                    addToBasket={addToBasket}
-                  />
-                </div>
-              ))}
+              <div style={{ minHeight: "450px" }}>
+                <h3>mains</h3>
+                {mains.map((item, index) => (
+                  <div>
+                    <SingleItem
+                      key={index}
+                      item={item}
+                      addToBasket={addToBasket}
+                    />
+                  </div>
+                ))}
+              </div>
             </TabPanel>
             <TabPanel
               className="deserts panel"
               style={{ background: "#730B43", marginBottom: "-20px" }}
             >
-              <h3>desserts</h3>
-              {deserts.map((item, index) => (
-                <div>
-                  <SingleItem
-                    key={index}
-                    item={item}
-                    addToBasket={addToBasket}
-                  />
-                </div>
-              ))}
+              <div style={{ minHeight: "450px" }}>
+                <h3>desserts</h3>
+                {deserts.map((item, index) => (
+                  <div>
+                    <SingleItem
+                      key={index}
+                      item={item}
+                      addToBasket={addToBasket}
+                    />
+                  </div>
+                ))}
+              </div>
             </TabPanel>
             <Basket basketList={basketList} />
           </div>

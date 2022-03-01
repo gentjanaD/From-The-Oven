@@ -8,7 +8,7 @@ export const SearchBar = ({ changeHandler }: SearchBarProps) => {
     <SearchBarWrapper>
       <div>
         <input
-          placeholder="search"
+          placeholder="search then click on category"
           className="serachBarInput"
           type="text"
           onChange={changeHandler}
