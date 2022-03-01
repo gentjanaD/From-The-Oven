@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { useState } from "react";
 import MenuCatWrapper from "./MenuCatWrapper";
 import { menuData } from "../../assets/menuData";
 import SingleItem from "../singleItem/SingleItem";
@@ -11,6 +12,7 @@ interface MenuCatProps {
   addToBasket: (item: Item) => void;
 }
 export default function MenuCat({ basketList, addToBasket }: MenuCatProps) {
+  const [tabIndex, setTabIndex] = useState(0);
   const softDrinks: Item[] = [];
   const alcohol: Item[] = [];
   const starters: Item[] = [];
@@ -34,7 +36,10 @@ export default function MenuCat({ basketList, addToBasket }: MenuCatProps) {
   console.log("basketlist", basketList);
   return (
     <MenuCatWrapper>
-      <Tabs>
+      <Tabs
+        selectedIndex={tabIndex}
+        onSelect={(index: number) => setTabIndex(index)}
+      >
         <div className="menuCat">
           <TabList className="list">
             <Tab></Tab>
@@ -58,7 +63,7 @@ export default function MenuCat({ basketList, addToBasket }: MenuCatProps) {
             <TabPanel>
               <img id="ovenImg" src={ovenImg} alt="ovenImg" width="100%" />
             </TabPanel>
-            <TabPanel className="soft panel">
+            <TabPanel className="soft panel" style={{ background: "#717C98" }}>
               <h3>soft drinks</h3>
               {softDrinks.map((item, index) => (
                 <div className="soft_content">
@@ -70,7 +75,10 @@ export default function MenuCat({ basketList, addToBasket }: MenuCatProps) {
                 </div>
               ))}
             </TabPanel>
-            <TabPanel className="alcohol panel">
+            <TabPanel
+              className="alcohol panel"
+              style={{ background: "#717C98" }}
+            >
               <div className="cat_item_content">
                 <h3>alcohol</h3>
                 {alcohol.map((item, index) => (
@@ -84,7 +92,10 @@ export default function MenuCat({ basketList, addToBasket }: MenuCatProps) {
                 ))}
               </div>
             </TabPanel>
-            <TabPanel className="starter panel">
+            <TabPanel
+              className="starter panel"
+              style={{ background: "#C17630" }}
+            >
               <h3>starters</h3>
               {starters.map((item, index) => (
                 <div className="soft_content">
@@ -96,7 +107,7 @@ export default function MenuCat({ basketList, addToBasket }: MenuCatProps) {
                 </div>
               ))}
             </TabPanel>
-            <TabPanel className="mains panel">
+            <TabPanel className="mains panel" style={{ background: "#C17630" }}>
               <h3>mains</h3>
               {mains.map((item, index) => (
                 <div className="soft_content">
@@ -108,8 +119,11 @@ export default function MenuCat({ basketList, addToBasket }: MenuCatProps) {
                 </div>
               ))}
             </TabPanel>
-            <TabPanel className="deserts panel">
-              <h3>deserts</h3>
+            <TabPanel
+              className="deserts panel"
+              style={{ background: "#730B43" }}
+            >
+              <h3>desserts</h3>
               {deserts.map((item, index) => (
                 <div className="soft_content">
                   <SingleItem

@@ -5,10 +5,12 @@ interface BasketProps {
 }
 export default function Basket({ basketList }: BasketProps) {
   let priceArr: number[] = [];
-  basketList.forEach((item: Item) => {
-    priceArr.push(item.price);
+  const uniqueBasket = basketList.filter(
+    (item, index) => basketList.indexOf(item) == index
+  );
+  uniqueBasket.forEach((item: Item) => {
+    priceArr.push(item.price * item.quantity);
   });
-
   return (
     <BasketWrapper>
       <div className="basket_total">

@@ -11,7 +11,7 @@ export default function SingleItem({ item, addToBasket }: SingleItemProps) {
       <div className="itemContent">
         <img src={item.image} width="100" height="auto" />
         <h3> {item.name}</h3>
-        <h5>${item.price}</h5>
+        <h4>${item.price}</h4>
         <button
           type="button"
           onClick={() => {

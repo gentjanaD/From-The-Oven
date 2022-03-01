@@ -7,6 +7,7 @@ export const menuData = [
     featured: false,
     price: 10,
     quantity: 0,
+    color: "717C98",
     image:
       "https://images.pexels.com/photos/8473211/pexels-photo-8473211.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=300",
   },
@@ -18,6 +19,7 @@ export const menuData = [
     featured: false,
     price: 16,
     quantity: 0,
+    color: "717C98",
     image:
       "https://images.pexels.com/photos/128242/pexels-photo-128242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -29,19 +31,70 @@ export const menuData = [
     featured: false,
     price: 14,
     quantity: 0,
+    color: "717C98",
     image:
       "https://images.pexels.com/photos/1123260/pexels-photo-1123260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
   {
     id: 37,
+    name: "margarita",
+    dietaries: ["ve"],
+    category: "alcohol",
+    featured: false,
+    price: 14,
+    quantity: 0,
+    color: "717C98",
+    image:
+      "https://images.pexels.com/photos/2260281/pexels-photo-2260281.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+  },
+
+  {
+    id: 38,
     name: "coke",
     dietaries: ["ve"],
     category: "soft",
     featured: false,
     price: 3,
     quantity: 0,
+    color: "717C98",
     image:
       "https://images.pexels.com/photos/4389667/pexels-photo-4389667.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+  },
+  {
+    id: 39,
+    name: "ice tea",
+    dietaries: ["ve"],
+    category: "soft",
+    featured: false,
+    price: 3,
+    quantity: 0,
+    color: "717C98",
+    image:
+      "https://images.pexels.com/photos/128242/pexels-photo-128242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+  },
+  {
+    id: 40,
+    name: "latte",
+    dietaries: ["ve"],
+    category: "soft",
+    featured: false,
+    price: 3,
+    quantity: 0,
+    color: "717C98",
+    image:
+      "https://images.pexels.com/photos/533393/pexels-photo-533393.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+  },
+  {
+    id: 41,
+    name: "coffee",
+    dietaries: ["ve"],
+    category: "soft",
+    featured: false,
+    price: 3,
+    quantity: 0,
+    color: "717C98",
+    image:
+      "https://images.pexels.com/photos/977876/pexels-photo-977876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 54,
@@ -51,6 +104,7 @@ export const menuData = [
     featured: false,
     price: 20,
     quantity: 0,
+    color: "C17630",
     image:
       "https://images.pexels.com/photos/1352274/pexels-photo-1352274.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -62,6 +116,7 @@ export const menuData = [
     featured: false,
     price: 16,
     quantity: 0,
+    color: "C17630",
     image:
       "https://images.pexels.com/photos/5916/food-salad-healthy-colorful.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -73,8 +128,21 @@ export const menuData = [
     featured: true,
     price: 26,
     quantity: 0,
+    color: "C17630",
     image:
       "https://images.pexels.com/photos/3791089/pexels-photo-3791089.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+  },
+  {
+    id: 53,
+    name: "chicken pesto",
+    dietaries: ["df"],
+    category: "main",
+    featured: true,
+    price: 26,
+    quantity: 0,
+    color: "C17630",
+    image:
+      "https://images.pexels.com/photos/64208/pexels-photo-64208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 60,
@@ -84,8 +152,45 @@ export const menuData = [
     featured: false,
     price: 6,
     quantity: 0,
+    color: "C17630",
     image:
       "https://images.pexels.com/photos/2067621/pexels-photo-2067621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+  },
+  {
+    id: 61,
+    name: "burrata",
+    dietaries: ["gf"],
+    category: "starter",
+    featured: false,
+    price: 6,
+    quantity: 0,
+    color: "C17630",
+    image:
+      "https://images.pexels.com/photos/3669501/pexels-photo-3669501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
+  {
+    id: 62,
+    name: "calamari",
+    dietaries: [""],
+    category: "starter",
+    featured: false,
+    price: 6,
+    quantity: 0,
+    color: "C17630",
+    image:
+      "https://images.pexels.com/photos/4181933/pexels-photo-4181933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
+  {
+    id: 63,
+    name: "tomato soup",
+    dietaries: [""],
+    category: "starter",
+    featured: false,
+    price: 6,
+    quantity: 0,
+    color: "C17630",
+    image:
+      "https://images.pexels.com/photos/539451/pexels-photo-539451.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 10,
@@ -95,6 +200,7 @@ export const menuData = [
     featured: false,
     price: 6,
     quantity: 0,
+    color: "730B43",
     image:
       "https://images.pexels.com/photos/4421615/pexels-photo-4421615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
   },
@@ -106,14 +212,32 @@ export const menuData = [
     featured: true,
     price: 5,
     quantity: 0,
+    color: "730B43",
     image:
       "https://images.pexels.com/photos/697571/pexels-photo-697571.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
   },
-  // {
-  //   id: 12,
-  //   name: "vanilla ice-cream",
-  //   dietaries: ["v"],
-  //   category: "desert",
-  //   featured: false,
-  // },
+  {
+    id: 12,
+    name: "chocolate mouse",
+    dietaries: ["v", "ve", "gf", "df"],
+    category: "desert",
+    featured: true,
+    price: 5,
+    quantity: 0,
+    color: "730B43",
+    image:
+      "https://images.pexels.com/photos/3026810/pexels-photo-3026810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
+  {
+    id: 13,
+    name: "keylime",
+    dietaries: ["v", "ve", "gf", "df"],
+    category: "desert",
+    featured: true,
+    price: 5,
+    quantity: 0,
+    color: "730B43",
+    image:
+      "https://images.pexels.com/photos/5733499/pexels-photo-5733499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  },
 ];

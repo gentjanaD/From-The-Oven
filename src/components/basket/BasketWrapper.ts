@@ -16,8 +16,8 @@ const BasketWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-top: solid 2px rgba(68, 61, 78, 100);
-    border-top-style: outset;
+    /* border-top: solid 2px rgba(68, 61, 78, 100); */
+    /* border-top-style: outset; */
   }
 `;
 export default BasketWrapper;

@@ -1,7 +1,6 @@
 import React from "react";
 import ModalWrapper from "./ModalWrapper";
 import { Item } from "../../types/menuTypes";
-import { normalize } from "path/posix";
 interface ModalProps {
   basketList: Item[];
   onClick: boolean;
@@ -10,17 +9,20 @@ interface ModalProps {
 export const Modal = ({ basketList, onClick, closeModal }: ModalProps) => {
   if (!onClick) return null;
   let priceArr: number[] = [];
-  basketList.forEach((item: Item) => {
+  const uniqueBasket = basketList.filter(
+    (item, index) => basketList.indexOf(item) == index
+  );
+  uniqueBasket.forEach((item: Item) => {
     priceArr.push(item.price * item.quantity);
   });
-  console.log(basketList);
+
   return (
     <ModalWrapper>
       <div className="modal_backdrop" onClick={closeModal}>
         <div className="modal_content_wrapper">
           <div className="modal_content">
             <h3>Your Items</h3>
-            {basketList.map((item) => (
+            {uniqueBasket.map((item) => (
               <div>
                 <p>{item.name}</p>
                 <p>${item.price}</p>

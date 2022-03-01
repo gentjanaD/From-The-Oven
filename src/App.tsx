@@ -9,8 +9,7 @@ function App() {
   const [basketList, setBasketList] = useState<Item[]>([]);
 
   const addToBasket = (item: Item) => {
-    basketList.map((newItem) => newItem.name).includes(item.name) ||
-      setBasketList((prev) => [...prev, item]);
+    setBasketList((prev) => [...prev, item]);
     item.quantity++;
   };
 

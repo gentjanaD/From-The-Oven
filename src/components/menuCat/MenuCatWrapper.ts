@@ -20,7 +20,7 @@ const MenuCatWrapper = styled.div`
 
         > h3 {
           align-self: center;
-          margin: auto;
+          /* margin: auto; */
         }
       }
       .soft {
@@ -40,19 +40,19 @@ const MenuCatWrapper = styled.div`
       }
     }
     .panels {
-      background-color: rgba(113, 124, 152, 100);
-      width: 40vw;
-      height: 50vh;
-      border-radius: 5px;
-      border: solid 3px yellow;
       overflow-y: scroll;
+      width: 40vw;
+      border-radius: 5px;
+      height: 50vh;
+      border: solid 3px yellow;
       #ovenImg {
         height: 50vh;
         border-radius: 5px;
       }
       .panel {
+        margin-top: -20px;
         h3 {
-          margin-bottom: 30px;
+          padding-top: 10px;
           text-transform: capitalize;
         }
       }
