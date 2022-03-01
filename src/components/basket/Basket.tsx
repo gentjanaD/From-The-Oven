@@ -13,7 +13,7 @@ export default function Basket({ basketList }: BasketProps) {
   });
   return (
     <BasketWrapper>
-      <div className="basket_total">
+      <div className="basket_total" style={{ background: "#E3BB6C" }}>
         {basketList.length > 0 && <h4>{basketList.length} items in basket</h4>}
         {priceArr.length > 0 && (
           <p>Total ${priceArr?.reduce((a, b) => a + b, 0)}</p>

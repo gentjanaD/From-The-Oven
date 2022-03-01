@@ -16,6 +16,7 @@ const BasketWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-top: 20px;
     /* border-top: solid 2px rgba(68, 61, 78, 100); */
     /* border-top-style: outset; */
   }

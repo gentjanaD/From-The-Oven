@@ -30,9 +30,15 @@ const ModalWrapper = styled.div`
     display: flex;
     flex-direction: column;
   }
-  .modal_item_content {
+  .modal_items {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 20px;
+    align-items: stretch;
+    /* align-content: space-between; */
+  }
+  p {
+    text-transform: capitalize;
   }
   .price {
     border-top: solid 3px green;

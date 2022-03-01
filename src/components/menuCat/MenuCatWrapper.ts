@@ -44,13 +44,15 @@ const MenuCatWrapper = styled.div`
       width: 40vw;
       border-radius: 5px;
       height: 50vh;
-      border: solid 3px yellow;
+      border: solid 3px #e3bb6c;
       #ovenImg {
         height: 50vh;
         border-radius: 5px;
       }
       .panel {
         margin-top: -20px;
+        /* margin-bottom: 20px; */
+        /* padding-bottom: 20px; */
         h3 {
           padding-top: 10px;
           text-transform: capitalize;

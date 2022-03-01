@@ -98,7 +98,7 @@ export default function MenuCat({ basketList, addToBasket }: MenuCatProps) {
             >
               <h3>starters</h3>
               {starters.map((item, index) => (
-                <div className="soft_content">
+                <div>
                   <SingleItem
                     key={index}
                     item={item}
@@ -110,7 +110,7 @@ export default function MenuCat({ basketList, addToBasket }: MenuCatProps) {
             <TabPanel className="mains panel" style={{ background: "#C17630" }}>
               <h3>mains</h3>
               {mains.map((item, index) => (
-                <div className="soft_content">
+                <div>
                   <SingleItem
                     key={index}
                     item={item}
@@ -121,11 +121,11 @@ export default function MenuCat({ basketList, addToBasket }: MenuCatProps) {
             </TabPanel>
             <TabPanel
               className="deserts panel"
-              style={{ background: "#730B43" }}
+              style={{ background: "#730B43", marginBottom: "-20px" }}
             >
               <h3>desserts</h3>
               {deserts.map((item, index) => (
-                <div className="soft_content">
+                <div>
                   <SingleItem
                     key={index}
                     item={item}
