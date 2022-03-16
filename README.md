@@ -14,7 +14,7 @@
 <img src="src/assets/FromTheOven1.png" style=" width:30%; height:auto">
 <img src="src/assets/FromTheOven2.png" style=" width:30%; height:auto ">
 </div>
-Purpose of this repo is to test and work with different technilogies.
+Purpose of this repo is to test and work with different technologies.
 
 ### App Functionality
 
