@@ -8,7 +8,7 @@
 </div>
 </br>
 
-## Deployed on [GitHub Pages](https://gentjanad.github.io/Menu-App/)
+## Deployed on [GitHub Pages](https://gentjanad.github.io/From-The-Oven/)
 
 <div align="center">
 <img src="src/assets/FromTheOven1.png" style=" width:30%; height:auto">
