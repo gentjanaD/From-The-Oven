@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/Menu-App/static/js/main.371ac9a8.js",
-    "static/media/oven.jpeg": "/Menu-App/static/media/oven.39561d8ebf3c842f79d6.jpeg",
-    "index.html": "/Menu-App/index.html",
-    "main.371ac9a8.js.map": "/Menu-App/static/js/main.371ac9a8.js.map"
+    "main.js": "/From-The-Oven/static/js/main.2081b2f9.js",
+    "static/media/oven.jpeg": "/From-The-Oven/static/media/oven.39561d8ebf3c842f79d6.jpeg",
+    "index.html": "/From-The-Oven/index.html",
+    "main.2081b2f9.js.map": "/From-The-Oven/static/js/main.2081b2f9.js.map"
   },
   "entrypoints": [
-    "static/js/main.371ac9a8.js"
+    "static/js/main.2081b2f9.js"
   ]
 }
